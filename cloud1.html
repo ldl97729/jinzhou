@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>云产品-营销短信</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+	 <header-top :navs="3"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="nybanner mailbanner" style="background-image: url(images/banner10.jpg);">
+				 <div class="nytit">
+					 <div class="layout">
+						 <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">营销短信</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">为TO B企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能解决方案。帮助企业 降低销售成本，提升销售业绩。</p>
+					     <div class="btnsbox wow fadeInUp" data-wow-delay="0.6s" >
+							 <a class="btns" style="background-color: #ff5100; color: #fff;" href="#">立即咨询</a>
+					     </div>
+					 </div>
+				 </div>
+             </div>
+			<div class="sectionBox mail-bg2">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">产品售卖</h2>
+					</div>
+					<div id="marketingSms-tab1" class="marketingSms-tab">
+						<ul>
+							<li class="on"><a href="javascript:;">国内短信套餐包</a></li>
+							<li><a href="javascript:;">国际/港澳台套餐包</a></li>
+						</ul>
+					</div>
+					<div class="marketingSms-package">
+						<div class="list">
+							<ul class="clearfix">
+								<li>
+									<div class="box">
+										<h2 class="h2 overflowtxt">短信套餐小包5000条</h2>
+										<p class="ps">个人及小微企业适用</p>
+										<span class="line"></span>
+										<h3 class="h3">产品特性：</h3>
+										<div class="pcont">
+											<p><span class="dg">✔</span>快速接入，简单易用</p>
+											<p><span class="dg">✔</span>发送失败不收费</p>
+										</div>
+										<div class="pr">每条短信¥0.050</div>
+										<div class="price">¥250元／24个月</div>
+										<a class="btns" href="#">立即购买</a>
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<h2 class="h2 overflowtxt">短信套餐小包5000条</h2>
+										<p class="ps">个人及小微企业适用</p>
+										<span class="line"></span>
+										<h3 class="h3">产品特性：</h3>
+										<div class="pcont">
+											<p><span class="dg">✔</span>快速接入，简单易用</p>
+											<p><span class="dg">✔</span>发送失败不收费</p>
+										</div>
+										<div class="pr">每条短信¥0.050</div>
+										<div class="price">¥250元／24个月</div>
+										<a class="btns" href="#">立即购买</a>
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<h2 class="h2 overflowtxt">短信套餐小包5000条</h2>
+										<p class="ps">个人及小微企业适用</p>
+										<span class="line"></span>
+										<h3 class="h3">产品特性：</h3>
+										<div class="pcont">
+											<p><span class="dg">✔</span>快速接入，简单易用</p>
+											<p><span class="dg">✔</span>发送失败不收费</p>
+										</div>
+										<div class="pr">每条短信¥0.050</div>
+										<div class="price">¥250元／24个月</div>
+										<a class="btns" href="#">立即购买</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="list">
+							<ul class="clearfix">
+								<li>
+									<div class="box">
+										<h2 class="h2 overflowtxt">短信套餐小包5000条</h2>
+										<p class="ps">个人及小微企业适用</p>
+										<span class="line"></span>
+										<h3 class="h3">产品特性：</h3>
+										<div class="pcont">
+											<p><span class="dg">✔</span>快速接入，简单易用</p>
+											<p><span class="dg">✔</span>发送失败不收费</p>
+										</div>
+										<div class="pr">每条短信¥0.050</div>
+										<div class="price">¥250元／24个月</div>
+										<a class="btns" href="#">立即购买</a>
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<h2 class="h2 overflowtxt">短信套餐小包5000条</h2>
+										<p class="ps">个人及小微企业适用</p>
+										<span class="line"></span>
+										<h3 class="h3">产品特性：</h3>
+										<div class="pcont">
+											<p><span class="dg">✔</span>快速接入，简单易用</p>
+											<p><span class="dg">✔</span>发送失败不收费</p>
+										</div>
+										<div class="pr">每条短信¥0.050</div>
+										<div class="price">¥250元／24个月</div>
+										<a class="btns" href="#">立即购买</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sectionBox mail-bg3">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">应用场景</h2>
+					</div>
+					<div id="marketingSms-tab2" class="marketingSms-tab">
+						<ul>
+							<li class="on"><a href="javascript:;">验证码</a></li>
+							<li><a href="javascript:;">短信通知</a></li>
+							<li><a href="javascript:;">推广短信</a></li>
+						</ul>
+					</div>
+					<div class="marketingSms-app">
+						<!--box-->
+						<div class="box clearfix">
+							<div class="pic"><img alt="验证码" src="images/img44.jpg"></div>
+							<div class="tmain">
+								<h2 class="h2">验证码</h2>
+								<div class="pcont">
+									<p>国内短信三网合一专属通道，秒级可达</p>
+									<p>可发送国际短信验证码，支持全球语言 </p>
+									<p>支持变量，内容灵活，可适应各种业务场景</p>
+								</div>
+								<h2 class="h2">典型场景</h2>
+								<div class="pcont">
+									<p>APP/网站注册、安全登陆、支付认证、身份认证、密码找回、账号绑定等</p>
+								</div>
+								<h2 class="h2">推荐搭配产品</h2>
+								<div class="tag">
+									<ul class="clearfix">
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon76.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon77.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon77.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon78.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="box clearfix">
+							<div class="pic"><img alt="短信通知" src="images/img44.jpg"></div>
+							<div class="tmain">
+								<h2 class="h2">短信通知</h2>
+								<div class="pcont">
+									<p>国内短信三网合一专属通道，秒级可达</p>
+									<p>可发送国际短信验证码，支持全球语言 </p>
+									<p>支持变量，内容灵活，可适应各种业务场景</p>
+								</div>
+								<h2 class="h2">典型场景</h2>
+								<div class="pcont">
+									<p>APP/网站注册、安全登陆、支付认证、身份认证、密码找回、账号绑定等</p>
+								</div>
+								<h2 class="h2">推荐搭配产品</h2>
+								<div class="tag">
+									<ul class="clearfix">
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon76.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon77.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon77.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon78.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="box clearfix">
+							<div class="pic"><img alt="推广短信" src="images/img44.jpg"></div>
+							<div class="tmain">
+								<h2 class="h2">推广短信</h2>
+								<div class="pcont">
+									<p>国内短信三网合一专属通道，秒级可达</p>
+									<p>可发送国际短信验证码，支持全球语言 </p>
+									<p>支持变量，内容灵活，可适应各种业务场景</p>
+								</div>
+								<h2 class="h2">典型场景</h2>
+								<div class="pcont">
+									<p>APP/网站注册、安全登陆、支付认证、身份认证、密码找回、账号绑定等</p>
+								</div>
+								<h2 class="h2">推荐搭配产品</h2>
+								<div class="tag">
+									<ul class="clearfix">
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon76.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon77.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon77.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+										<li>
+											<span class="icon"><img alt="图片" src="images/icon78.png"></span>
+											<p class="pn overflowtxt">号码隐私保护</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--box-->
+					</div>
+				</div>
+			</div>
+			<div class="sectionBox mail-bg2">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">产品优势</h2>
+					</div>
+					<div class="marketingSms-advantage">
+						<ul class="clearfix">
+							<li>
+								<div class="box">
+									<span class="icon"><img alt="覆盖全面" src="images/icon79.png"></span>
+									<h2 class="h2">覆盖全面</h2>
+									<p class="pn">服务覆盖200+国家和地区，即时触达全球各地</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<span class="icon"><img alt="快速稳定" src="images/icon80.png"></span>
+									<h2 class="h2">快速稳定</h2>
+									<p class="pn">服务覆盖200+国家和地区，即时触达全球各地</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<span class="icon"><img alt="接入便捷" src="images/icon81.png"></span>
+									<h2 class="h2">接入便捷</h2>
+									<p class="pn">服务覆盖200+国家和地区，即时触达全球各地</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<span class="icon"><img alt="智能监控调度" src="images/icon82.png"></span>
+									<h2 class="h2">智能监控调度</h2>
+									<p class="pn">服务覆盖200+国家和地区，即时触达全球各地</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sectionBox mail-bg3">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">他们选择了我们</h2>
+					    <p class="pn wow fadeInUp" data-wow-delay="0.4s">热门惠聚，一站式云服务助力数字化转型</p>
+					</div>
+					<div class="partner-list">
+						<ul class="clearfix">
+							<li><div class="pic"><img alt="图片" src="images/img1.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img2.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img3.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img4.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img5.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img6.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img7.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img8.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img9.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img10.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img11.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img12.jpg"></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sectionBox cloudnews">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">产品动态</h2>
+					</div>
+					<div id="ProNews" class="marketingSms-news">
+						
+						<div class="item">
+							<a class="box" href="#">
+								<div class="year"><span>2016-12-1  体验优化</span></div>
+								<i class="dots"></i>
+								<p class="pn">优化授权委托书模板  <span class="more">查看详情</span></p>
+							</a>
+						</div>
+						<div class="item">
+							<a class="box" href="#">
+								<div class="year"><span>2016-12-1  体验优化</span></div>
+								<i class="dots"></i>
+								<p class="pn">优化授权委托书模板  <span class="more">查看详情</span></p>
+							</a>
+						</div>
+						<div class="item">
+							<a class="box" href="#">
+								<div class="year"><span>2016-12-1  体验优化</span></div>
+								<i class="dots"></i>
+								<p class="pn">优化授权委托书模板  <span class="more">查看详情</span></p>
+							</a>
+						</div>
+						<div class="item">
+							<a class="box" href="#">
+								<div class="year"><span>2016-12-1  体验优化</span></div>
+								<i class="dots"></i>
+								<p class="pn">优化授权委托书模板  <span class="more">查看详情</span></p>
+							</a>
+						</div>
+						<div class="item">
+							<a class="box" href="#">
+								<div class="year"><span>2016-12-1  体验优化</span></div>
+								<i class="dots"></i>
+								<p class="pn">优化授权委托书模板  <span class="more">查看详情</span></p>
+							</a>
+						</div>
+						
+					</div>
+					<div class="link">
+						<a href="#">查看全部日志<i>></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="sectionBox mail-bg2">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">关联产品推荐</h2>
+					</div>
+					<div class="marketingSms-advantage">
+						<ul class="clearfix">
+							<li>
+								<div class="box">
+									<span class="icon"><img alt="语音服务" src="images/icon83.png"></span>
+									<h2 class="h2">语音服务</h2>
+									<p class="pn">语音服务（Voice Messaging Service），是阿里云为了方便用户使用语音能力联合运营商提供稳定可靠、安全可信的云通信服务。</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<span class="icon"><img alt="快速稳定" src="images/icon84.png"></span>
+									<h2 class="h2">语音服务</h2>
+									<p class="pn">语音服务（Voice Messaging Service），是阿里云为了方便用户使用语音能力联合运营商提供稳定可靠、安全可信的云通信服务。</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sectionBox mail-bg3">
+				<div class="layout">
+					<div class="marketingSms-list">
+						<ul class="clearfix">
+							<li>
+								<div class="box">
+									<h2 class="h2"><a href="#">产品简介</a></h2>
+									<p class="ps">产品接入流程、服务协议</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<h2 class="h2"><a href="#">用户指南</a></h2>
+									<p class="ps">产品接入流程、服务协议</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<h2 class="h2"><a href="#">开发指南</a></h2>
+									<p class="ps">产品接入流程、服务协议</p>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<h2 class="h2"><a href="#">常见问题</a></h2>
+									<p class="ps">产品接入流程、服务协议</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+         </div></section>
+
+		 <footer-bottom></footer-bottom>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+
+<script src='js/slick.min.js'></script>
+
+
+<script>
+
+//Pro News
+inPro($('#ProNews'));
+function inPro(obj){
+	obj.slick({
+	    autoplay: true,
+	    arrows: true,
+	    dots: false,
+	    speed: 1000,
+	    autoplaySpeed: 5000,
+	    pauseOnHover: false,
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+	    responsive: [
+	        {
+	            breakpoint: 1200,
+	            settings: {
+	                slidesToShow: 4
+	            }
+	        },
+	        {
+	            breakpoint: 1024,
+	            settings: {
+	                slidesToShow: 4
+	            }
+	        },
+	        {
+	            breakpoint: 860,
+	            settings: {
+	                slidesToShow: 3
+	            }
+	        },
+	        {
+	            breakpoint: 768,
+	            settings: {
+	                slidesToShow: 2
+	            }
+	        },
+	        {
+	            breakpoint: 640,
+	            settings: {
+	                slidesToShow: 1
+	            }
+	        }
+	    ]
+	});
+}
+$(document).ready(function() {
+			
+    $("body").addClass('mailbody');
+
+});
+</script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+		el: '#wrapper',
+		data: {
+			navs:3
+		},
+		methods: {
+
+		},
+		mounted() {
+
+		}
+	})</script>
+</script>
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body> 
+</html>

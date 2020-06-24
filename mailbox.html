@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>企业邮箱-产品介绍</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+
+	 <header-top :navs="1"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="nybanner mailbanner" style="background-image: url(images/banner4.jpg);">
+				 <div class="nytit">
+					 <div class="layout">
+						 <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">企业邮箱</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">为TO B企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能解决方案。帮助企业 降低销售成本，提升销售业绩。</p>
+					     <div class="btnsbox wow fadeInUp" data-wow-delay="0.6s" >
+							 <a class="btns" href="#">立即咨询</a>
+					     </div>
+					 </div>
+				 </div>
+             </div>
+			 <div class="mail-navbox">
+				 <div class="layout">
+					 <div class="list">
+						 <a class="btns" href="javascript:;">产品介绍</a>
+						 <ul class="clearfix">
+							 <li class="on"><a href="mailbox.html">产品介绍</a></li>
+							 <li><a href="mailbox1.html">钉邮</a></li>
+							 <li><a href="mailbox2.html">运维服务</a></li>
+							 <li class="free-trial"><a class="show-btn" href="javascript:;">免费试用</a></li>
+						 </ul>
+					 </div>
+				 </div>
+			 </div>
+             <div class="sectionBox section02">
+                 <div class="layout">
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">阿里企业邮箱版本</h2>
+                     </div>
+					 <div class="mail-buy">
+						 <a href="#">现在购买，免费领取新用户商务大礼包！ >了解详情</a>
+					 </div>
+					 <div class="ali-maillist">
+						 <ul class="clearfix">
+							 <li><div class="box">
+								 <span class="icon"><img alt="阿里邮箱" src="images/ali1.jpg"></span>
+								 <h2 class="h2">企业标准版</h2>
+								 <div class="pcont">
+									 <p>定制企业品牌形象</p>
+									 <p>数据监控和备份</p>
+									 <p>7*24小时 热线+工单支持</p>
+								 </div>
+								 <h3 class="price">￥<span>6005</span>账号/年</h3>
+								 <div class="ps">
+									 <p>帐号容量 &nbsp;&nbsp;无限/帐号</p>
+									 <p>个人网盘	 &nbsp;&nbsp;5G/帐号</p>
+									 <p>共享网盘 &nbsp;&nbsp;20G/企业域</p>
+									 <p>售卖区间 &nbsp;&nbsp;5-500</p>
+								 </div>
+								 <div class="tips">高速发展期企业首选，按需购买</div>
+								 <div class="buy"><a href="#">立即购买</a></div>
+							 </div></li>
+							 <li><div class="box">
+								 <span class="icon"><img alt="阿里邮箱" src="images/ali2.jpg"></span>
+								 <h2 class="h2">企业集团版</h2>
+								 <div class="pcont">
+									 <p>定制企业品牌形象</p>
+									 <p>数据监控和备份</p>
+									 <p>7*24小时 热线+工单支持</p>
+								 </div>
+								 <h3 class="price">￥<span>6005</span>账号/年</h3>
+								 <div class="ps">
+									 <p>帐号容量 &nbsp;&nbsp;无限/帐号</p>
+									 <p>个人网盘	 &nbsp;&nbsp;5G/帐号</p>
+									 <p>共享网盘 &nbsp;&nbsp;20G/企业域</p>
+									 <p>售卖区间 &nbsp;&nbsp;5-500</p>
+								 </div>
+								 <div class="tips">高速发展期企业首选，按需购买</div>
+								 <div class="buy"><a href="#">立即购买</a></div>
+							 </div></li>
+							 <li class="vip"><div class="box">
+								 <span class="icon"><img alt="阿里邮箱" src="images/ali3.jpg"></span>
+								 <h2 class="h2">企业尊享版</h2>
+								 <div class="pcont">
+									 <p>定制企业品牌形象</p>
+									 <p>数据监控和备份</p>
+									 <p>7*24小时 热线+工单支持</p>
+								 </div>
+								 <h3 class="price">￥<span>6005</span>账号/年</h3>
+								 <div class="ps">
+									 <p>帐号容量 &nbsp;&nbsp;无限/帐号</p>
+									 <p>个人网盘	 &nbsp;&nbsp;5G/帐号</p>
+									 <p>共享网盘 &nbsp;&nbsp;20G/企业域</p>
+									 <p>售卖区间 &nbsp;&nbsp;5-500</p>
+								 </div>
+								 <div class="tips">高速发展期企业首选，按需购买</div>
+								 <div class="buy"><a href="#">立即购买</a></div>
+							 </div></li>
+						 </ul>
+					 </div>
+                </div>     
+             </div>
+             <div class="sectionBox section01">
+                 <div class="layout">
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">企业邮箱 使用功能</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">助力企业进入移动办公时代</p>
+                     </div>
+					 <div class="mail-function clearfix">
+						 <div class="titbox">
+							 <span class="icon"><img alt="阿里邮箱" src="images/ali4.jpg"></span>
+							 <h2 class="h2">多终端支持</h2>
+							 <p class="pn">专属移动客户端，全面支持IOS、ANDROID手机；随时随地、轻松办公</p>
+						 </div>
+						 <div class="funlist">
+							 <ul class="clearfix">
+								 <li><div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon26.png"></span>
+									 <h2 class="h2">多任务模式</h2>
+									 <div class="pcont">
+										 <p>可同时多窗口进行读写邮件，设置邮箱等操作，企业办公更高效</p>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon27.png"></span>
+									 <h2 class="h2">钉钉收发信</h2>
+									 <div class="pcont">
+										 <p>可同时多窗口进行读写邮件，设置邮箱等操作，企业办公更高效</p>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon28.png"></span>
+									 <h2 class="h2">全文搜索</h2>
+									 <div class="pcont">
+										 <p>可同时多窗口进行读写邮件，设置邮箱等操作，企业办公更高效</p>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon29.png"></span>
+									 <h2 class="h2">网盘同步</h2>
+									 <div class="pcont">
+										 <p>可同时多窗口进行读写邮件，设置邮箱等操作，企业办公更高效</p>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon30.png"></span>
+									 <h2 class="h2">日程管理</h2>
+									 <div class="pcont">
+										 <p>可同时多窗口进行读写邮件，设置邮箱等操作，企业办公更高效</p>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon31.png"></span>
+									 <h2 class="h2">邮件同步</h2>
+									 <div class="pcont">
+										 <p>可同时多窗口进行读写邮件，设置邮箱等操作，企业办公更高效</p>
+									 </div>
+								 </div></li>
+							 </ul>
+						 </div>
+					 </div>
+					 <div class="index-title">
+					     <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">企业邮箱 管理功能</h2>
+					 	 <p class="pn wow fadeInUp" data-wow-delay="0.4s">助力企业进入移动办公时代</p>
+					 </div>
+					 <div class="mail-administration">
+						 <ul class="clearfix">
+							 <li>
+								 <div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon31.png"></span>
+									 <h2 class="h2">邮件监控</h2>
+									 <div class="pcont">
+									    <p>可设定监控帐号与被监控帐号，满足企业对邮箱 安全管控需求</p>
+									 </div>
+								 </div>
+								 <div class="tmain">
+									 <dl class="dl">
+										 <dt>邮箱归档</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>企业形象定制</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>IP登录权限</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>邮件秘书</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+									 </dl>
+								 </div>
+							 </li>
+							 <li>
+								 <div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon32.png"></span>
+									 <h2 class="h2">邮件监控</h2>
+									 <div class="pcont">
+									    <p>可设定监控帐号与被监控帐号，满足企业对邮箱 安全管控需求</p>
+									 </div>
+								 </div>
+								 <div class="tmain">
+									 <dl class="dl">
+										 <dt>多域管理</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>组织通讯录设置</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>邮件撤回</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>会议室管理</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+									 </dl>
+								 </div>
+							 </li>
+							 <li>
+								 <div class="box">
+									 <span class="icon"><img alt="阿里邮箱" src="images/icon33.png"></span>
+									 <h2 class="h2">邮件监控</h2>
+									 <div class="pcont">
+									    <p>可设定监控帐号与被监控帐号，满足企业对邮箱 安全管控需求</p>
+									 </div>
+								 </div>
+								 <div class="tmain">
+									 <dl class="dl">
+										 <dt>邮箱搬家</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>成员外发限制</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>动态邮件组</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+										 <dt>开放的API接口</dt>
+										 <dd>长期保存企业来往邮件，帮助企业快速检索邮件</dd>
+									 </dl>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+					 <div class="index-title">
+					     <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">核心服务</h2>
+					 	 <p class="pn wow fadeInUp" data-wow-delay="0.4s">助力企业进入移动办公时代</p>
+					 </div>
+					 <div class="mail-service">
+						 <ul class="clearfix">
+							 <li>
+								 <span class="icon" style="background-image: url(images/icon35.png);"></span>
+								 <h2 class="h2">申请试用</h2>
+								 <div class="pcont">
+								    <p>为企业搭建正式的环境进行测试</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon" style="background-image: url(images/icon36.png);"></span>
+								 <h2 class="h2">专家咨询服务</h2>
+								 <div class="pcont">
+								    <p>客户经理根据企业的行业、规模、使用习惯等为企业量身定制更合适的版本和方案</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon" style="background-image: url(images/icon37.png);"></span>
+								 <h2 class="h2">系统集成支持</h2>
+								 <div class="pcont">
+								    <p>产品架构师为企业提供系统集成、钉钉整合、压力测试、功能共创等服务</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon" style="background-image: url(images/icon38.png);"></span>
+								 <h2 class="h2">数据迁移</h2>
+								 <div class="pcont">
+								    <p>历史邮件数据迁移</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon" style="background-image: url(images/icon39.png);"></span>
+								 <h2 class="h2">产品培训</h2>
+								 <div class="pcont">
+								    <p>上门为企业进行产品功能使用、便捷方式、使用规范等</p>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </div>
+			</div>
+         </div></section>
+
+		 <footer><div class="footer">
+			<div class="layout">
+				<div class="foot-ser">
+					<ul class="clearfix">
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon17.png"></span>
+							<h2 class="h2">实时开通</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon18.png"></span>
+							<h2 class="h2">520标准服务</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon19.png"></span>
+							<h2 class="h2">全天候客户服务</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon20.png"></span>
+							<h2 class="h2">专属顾问服务</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+					</ul>
+				</div>
+				<div class="foot-midd clearfix">
+					<div class="foot-nav">
+						<dl class="dl">
+							<dt><a href="mailbox.html">企业邮箱</a></dt>
+							<dd><a href="mailbox.html">产品介绍</a></dd>
+							<dd><a href="mailbox1.html">钉邮</a></dd>
+							<dd><a href="mailbox.html">免费试用</a></dd>
+							<dd><a href="mailbox2.html">运维服务</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="application.html">企业应用</a></dt>
+							<dd><a href="application.html">智能营销</a></dd>
+							<dd><a href="application1.html">CRM</a></dd>
+							<!--<dd><a href="#">易快报</a></dd>-->
+							<dd><a href="application2.html">蚂蚁分工</a></dd>
+							<dd><a href="application3.html">Teambition</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="cloud.html">云产品</a></dt>
+							<dd><a href="cloud.html">域名与网站</a></dd>
+							<dd><a href="cloud3.html">云服务器</a></dd>
+							<dd><a href="cloud1.html">短信服务</a></dd>
+							<dd><a href="#">云运维</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="dingding.html">钉钉服务</a></dt>
+							<dd><a href="#">VIP顾问服务</a></dd>
+							<dd><a href="#">定制开发</a></dd>
+							<dd><a href="#">客户案例</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="solution.html">解决方案</a></dt>
+							<dd><a href="solution.html">通用解决方案</a></dd>
+							<dd><a href="solution.html">行业解决方案</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="ecology.html">生态合作</a></dt>
+							<dd><a href="ecology.html">渠道合作</a></dd>
+							<dd><a href="about.html">汇华云简介</a></dd>
+							<dd><a href="news.html">新闻动态</a></dd>
+						</dl>
+					</div>
+					<div class="foot-info">
+						<a class="btns" href="#"><span>在线客服</span></a>
+						<h2 class="h2">400-066-2020</h2>
+						<p class="pn">24 小时全国热线</p>
+					</div>
+					<div class="foot-ewm">
+						<img alt="二维码" src="images/ewm.jpg">
+						<p>扫一扫关注我们</p>
+					</div>
+				</div>
+				<div class="foot-copy clearfix">
+					<div class="ftlink">   
+						<a href="about.html">关于我们</a>     
+						<a href="#">联系方式</a>     
+						<a href="help.html">帮助中心</a>     
+						<a href="ecology.html">渠道合作</a>     
+						<a href="job.html">人才招聘</a>
+					</div>
+					<div class="fttext">
+						<div class="txt">Copyright © 2015-2017 汇华科技 huiva.com All Rights Reserved.   粤ICP备16062790号-2</div>
+						<div class="bdsharebuttonbox foot-sns">
+							<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+							<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+							<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></footer>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+		
+		<!--申请试用-->
+		<div class="layout-container">
+			<div class="fixed-box">
+				<div class="modal-box">
+					<div class="modal-form">
+						<div class="title">
+							<img alt="阿里" src="images/alicloud.png">
+							<span class="tips">20年阿里企业邮箱运营经验！咨询热线：400-066-2020</span>
+						</div>
+						<div class="app-form">
+							<ul>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">试用申请</span>
+										<input class="text" name="free" type="text" value="免费试用" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">您的姓名<i>*</i></span>
+										<input class="text" name="name" type="text" value="" placeholder="怎么称呼您" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">联系电话<i>*</i></span>
+										<input class="text" name="phone" type="text" value="" placeholder="11位手机号码" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">企业名称</span>
+										<input class="text" name="firmName" type="text" value="" placeholder="您所在的组织或者企业名称" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">常用邮箱</span>
+										<input class="text" name="email" type="text" value="" placeholder="您的邮箱" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">概要备注</span>
+										<input class="text" name="remarks" type="text" value="" placeholder="附加信息，留言备注内容" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box yzm-box">
+										<span class="tit">验证码</span>
+										<input class="text" name="code" type="text" value="" placeholder="请输入验证码" >
+										<img class="yzm" alt="验证码" src="images/yzm.jpg" id="imgcode">
+									</div>
+								</li>
+								<li class="item">
+									<div class="subimt-box">
+										<input id="comfirm" class="btns subimt" type="button" value="确认提交">
+										<input class="btns button" type="button" value="咨询客服" >
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="close"><img alt="关闭" src="images/close.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+
+<script type="text/javascript" src="./js/resource/mailbox.js" />
+ <script src="js/footer.js"></script>
+	 <script src="js/header.js"></script>
+	 <script type="text/javascript">
+		 var vue = new Vue({
+			 el: '#wrapper',
+			 data: {
+				 navs:7
+			 },
+			 methods: {
+	 
+			 },
+			 mounted() {
+	 
+			 }
+		 })</script>
+	 </script>
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+</body> 
+</html>

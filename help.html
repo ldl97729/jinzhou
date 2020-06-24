@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>帮助中心</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+	<link type="text/css" rel="stylesheet" href="css/pagination.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery.md5.js"></script>
+	<script type="text/javascript" src="js/jquery.pagination.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/httpcommon.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+
+     <header-top :navs="8"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="nybanner" style="background-image: url(images/banner3.jpg);">
+				 <div class="nytit">
+					 <div class="layout">
+						 <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">帮助中心</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">为TO B企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能解决方案。帮助企业 降低销售成本，提升销售业绩。</p>
+					 </div>
+				 </div>
+				 <div class="nynav">
+					 <div class="layout">
+						 <div class="list">
+							 <a class="btns" href="javascript:;">阿里邮箱</a>
+							 <ul class="clearfix">
+								 <li class="on"><a class="a" href="#">阿里邮箱</a></li>
+								 <li><a class="a" href="#">阿里云</a></li>
+								 <li><a class="a" href="#">Teambition</a></li>
+								 <li><a class="a" href="#">钉钉</a></li>
+							 </ul>
+							 <div class="search-box">
+								 <input class="text" type="text" value="" name="search" placeholder="输入你想咨询的问题进行搜索">
+								 <button id="serach" class="subimt">搜索</button>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+             </div>
+             <div class="sectionBox section01">
+                 <div class="layout">
+                     <!--<div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">阿里邮箱</h2>
+                     </div>-->
+					 <div class="help-wrap clearfix">
+						 <div class="help-left">
+							 <div class="help-nav help-nav-1">
+								 <h2 class="h2">热点问题</h2>
+								 <ul>
+									 <li><a href="#">历史数据找回</a></li>
+									 <li><a href="#">可办理ICP备案域名后缀说明</a></li>
+									 <li><a href="#">线下汇款汇到哪里？</a></li>
+									 <li><a href="#">会员申请发票流程</a></li>
+								 </ul>
+							 </div>
+							 <div class="help-nav help-nav-2">
+								 <h2 class="h2">视频教程</h2>
+								 <ul>
+									 <li><a href="#">历史数据找回</a></li>
+									 <li><a href="#">可办理ICP备案域名后缀说明</a></li>
+									 <li><a href="#">线下汇款汇到哪里？</a></li>
+									 <li><a href="#">会员申请发票流程</a></li>
+								 </ul>
+							 </div>
+						 </div>
+						 <div class="help-right">
+							 <div class="help-list">
+								 <ul>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+									 <li>
+										 <a class="box" href="#">
+											 <h2 class="h2 overflowtxt">可办理ICP备案域名后缀说明</h2>
+											 <span class="time">2019-02-13</span>
+										 </a>
+										 <!--<div class="tmain">可办理ICP备案域名后缀说明</div>-->
+									 </li>
+								 </ul>
+							 </div>
+							 <div id="pagination"></div>
+						 </div>
+					 </div>
+                </div>     
+             </div>
+         </div></section>
+
+		 <footer-bottom></footer-bottom>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+ <script type="text/javascript" src="js/resource/page_support-support.js"></script>
+ <script src="js/footer.js"></script>
+ <script src="js/header.js"></script>
+ <script type="text/javascript">
+	 var vue = new Vue({
+		 el: '#wrapper',
+		 data: {
+			 navs:8
+		 },
+		 methods: {
+ 
+		 },
+		 mounted() {
+ 
+		 }
+	 })</script>
+ </script>
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body> 
+</html>

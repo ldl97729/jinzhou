@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>企业应用-Teambition</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+
+	 <header-top :navs="2"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="nybanner bitionbanner" style="background-image: url(images/banner5.jpg);">
+				 <div class="nytit">
+					 <div class="layout">
+						 <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">Teambition，让团队协作焕然一新</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">我们总是有大大小小的目标，Teambition 可以把一切计划落实到位。团队以全新方式规划管理工作项目，成员执行更到位，而且完成过程也十分轻松。</p>
+					     <div class="btnsbox wow fadeInUp" data-wow-delay="0.6s" >
+							 <a class="btns freebtn" href="#">免费试用</a>
+							 <a class="btns" href="#">立即咨询</a>
+						 </div>
+					 </div>
+				 </div>
+             </div>
+             <div class="sectionBox mail-bg3">
+                 <div class="layout">
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">轻松管理工作项目</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">在简洁优雅的「看板」上，随时获知「谁」、要「做什么」、在「何时」完成，协同进展很轻松，跨团队合作项目也可以高效落实到位。</p>
+                     </div>
+					 <div class="teambition-box wow fadeInUp" data-wow-delay="0.6s">
+						 <p style="text-align: center;"><img alt="Teambition" src="images/img24.jpg"></p>
+					 </div>
+					 <div class="teambition-office">
+						 <ul>
+							 <li>
+								 <div class="pic wow fadeInRight">
+									 <img alt="Teambition" src="images/img25.jpg">
+								 </div>
+								 <div class="tmain wow fadeInLeft">
+									 <h2 class="h2">关联一切内容，沟通卓有成效</h2>
+									 <div class="pcont">
+										 <p>所有文件、关键讨论和会议日程都沉淀在「任务详情页」中，结构化地记录并关联至任务，再不用担心散落各地无从查找。</p>
+									 </div>
+								 </div>
+							 </li>
+							 <li>
+								 <div class="pic wow fadeInRight">
+									 <img alt="Teambition" src="images/img26.jpg">
+								 </div>
+								 <div class="tmain wow fadeInLeft">
+									 <h2 class="h2">量化工作安排，科学调配资源沟通卓有成效</h2>
+									 <div class="pcont">
+										 <p>在可视化的「时间视图」上，直观了解每位成员工作排期和负荷，项目规划和调配资源更合理。</p>
+									 </div>
+								 </div>
+							 </li>
+							 <li>
+								 <div class="pic wow fadeInRight">
+									 <img alt="Teambition" src="images/img27.jpg">
+								 </div>
+								 <div class="tmain wow fadeInLeft">
+									 <h2 class="h2">强大统计报表，数据驱动提升</h2>
+									 <div class="pcont">
+										 <p>随时掌握项目状况和团队表现，及时化解潜在风险。丰富的自选维度，让工时统计更简单，绩效评定更科学，工作环境更透明。</p>
+									 </div>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+                </div>     
+             </div>
+			 <div class="sectionBox mail-bg4">
+				 <div class="layout">
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">多元视角，赋能每一位成员</h2>
+                     </div>
+					 <div class="teambition-office">
+						 <ul>
+							 <li>
+								 <div class="pic wow fadeInRight">
+									 <img alt="Teambition" src="images/img28.jpg">
+								 </div>
+								 <div class="tmain wow fadeInLeft">
+									 <h2 class="h2">项目集群，纵览全局</h2>
+									 <div class="pcont">
+										 <p>为管理者提供跨项目的全局视野，在一处汇总各项业务进展多个项目并行，也能了然于胸。</p>
+									 </div>
+								 </div>
+							 </li>
+							 <li>
+								 <div class="pic wow fadeInRight">
+									 <img alt="Teambition" src="images/img29.jpg">
+								 </div>
+								 <div class="tmain wow fadeInLeft">
+									 <h2 class="h2">个人管理，得心应手</h2>
+									 <div class="pcont">
+										 <p>为执行成员提供日历等多种打开方式，轻松查看自己和他人的工作安排，合理规划手头任务。</p>
+									 </div>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </div>
+			 </div>
+			 <div class="sectionBox mail-bg3">
+				 <div class="layout">
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">喜爱它简单灵活，更爱它专业强大</h2>
+                     </div>
+					 <div class="teambition-flagship clearfix">
+						 <div class="pic"><img alt="Teambition" src="images/img30.png"></div>
+						 <div class="tmain">
+							 <h2 class="h2">Teambition 旗舰版</h2>
+							 <div class="pcont">
+								 <p>规划管理产品全生命周期，轻松实践敏捷开发。</p>
+							 </div>
+							 <div class="btnsbox">
+								 <a class="btns" href="#">查看详情</a>
+							 </div>
+						 </div>
+					 </div>
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">在各行各业，深受优秀企业信赖</h2>
+                     </div>
+					 <div class="teambition-coopbox">
+						 <div class="coolist">
+							 <ul class="clearfix">
+								 <li><div class="box">
+									 <div class="tmain">
+										 <span class="icon"><img alt="Teambition" src="images/img31.jpg"></span>
+										 <p class="pn">高效组织跨企业合作项目，打造小米生态圈。</p>
+									 </div>
+									 <div class="more">
+										 <a href="#">阅读故事</a>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <div class="tmain">
+										 <span class="icon"><img alt="Teambition" src="images/img32.jpg"></span>
+										 <p class="pn">高效组织跨企业合作项目，打造小米生态圈。</p>
+									 </div>
+									 <div class="more">
+										 <a href="#">阅读故事</a>
+									 </div>
+								 </div></li>
+								 <li><div class="box">
+									 <div class="tmain">
+										 <span class="icon"><img alt="Teambition" src="images/img33.jpg"></span>
+										 <p class="pn">高效组织跨企业合作项目，打造小米生态圈。</p>
+									 </div>
+									 <div class="more">
+										 <a href="#">阅读故事</a>
+									 </div>
+								 </div></li>
+							 </ul>
+						 </div>
+						 <div class="link">
+							 <a href="#">他们如何使用 Teambition <i>></i></a>
+						 </div>
+					 </div>
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">满足企业级需求</h2>
+                     </div>
+					 <div class="teambition-service">
+						 <ul class="clearfix">
+							 <li>
+								 <span class="icon">
+									 <img alt="Teambition" src="images/icon46.png">
+								 </span>
+								 <h2 class="h2">多种部署方式</h2>
+								 <div class="pcont">
+								    <p>推荐安全公有云，亦支持企业私有部署</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon">
+									 <img alt="Teambition" src="images/icon47.png">
+								 </span>
+								 <h2 class="h2">随时移动办公</h2>
+								 <div class="pcont">
+								    <p>实时互通的 Web、iOSAndroid 和小程序端</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon">
+									 <img alt="Teambition" src="images/icon48.png">
+								 </span>
+								 <h2 class="h2">钉钉应用集成</h2>
+								 <div class="pcont">
+								    <p>与钉钉信息互通，同步企业组织架构</p>
+								 </div>
+							 </li>
+							 <li>
+								 <span class="icon">
+									 <img alt="Teambition" src="images/icon49.png">
+								 </span>
+								 <h2 class="h2">客户成功服务</h2>
+								 <div class="pcont">
+								    <p>由专属顾问指导，帮助企业快速上手</p>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+                     <div class="index-title">
+                         <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">免费使用 Teambition 专业版</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">仅需 3 步即可完成注册，还可以邀请你的团队成员一起使用。</p>
+                     </div>
+					 <div class="make-btnsbox">
+						 <a class="btns mk" href="#">免费试用</a>
+						 <a class="btns" href="#">预约演示</a>
+					 </div>
+				 </div>
+			 </div>
+			 
+         </div></section>
+
+		 <footer-bottom></footer-bottom>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+		
+		<!--申请试用-->
+		<div class="layout-container">
+			<div class="fixed-box">
+				<div class="modal-box">
+					<div class="modal-form">
+						<div class="title">
+							<img alt="阿里" src="images/alicloud.png">
+							<span class="tips">20年阿里企业邮箱运营经验！咨询热线：400-066-2020</span>
+						</div>
+						<div class="app-form">
+							<ul>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">试用申请</span>
+										<input class="text" type="text" value="免费试用" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">您的姓名<i>*</i></span>
+										<input class="text" type="text" value="" placeholder="怎么称呼您" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">联系电话<i>*</i></span>
+										<input class="text" type="text" value="" placeholder="11位手机号码" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">企业名称</span>
+										<input class="text" type="text" value="" placeholder="您所在的组织或者企业名称" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">常用邮箱</span>
+										<input class="text" type="text" value="" placeholder="您的邮箱" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box">
+										<span class="tit">概要备注</span>
+										<input class="text" type="text" value="" placeholder="附加信息，留言备注内容" >
+									</div>
+								</li>
+								<li class="item">
+									<div class="input-box yzm-box">
+										<span class="tit">验证码</span>
+										<input class="text" type="text" value="" placeholder="请输入验证码" >
+										<img class="yzm" alt="验证码" src="images/yzm.jpg">
+									</div>
+								</li>
+								<li class="item">
+									<div class="subimt-box">
+										<input class="btns subimt" type="submit" value="确认提交" >
+										<input class="btns button" type="button" value="咨询客服" >
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="close"><img alt="关闭" src="images/close.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+
+<script>
+$(document).ready(function() {
+	
+	// 弹窗
+	$('.show-btn').click(function(){
+		$('.fixed-box').addClass('show');
+		$('.modal-box').addClass('animated bounceInDown');
+	});
+	$('.modal-box .close').click(function(){
+		$('.fixed-box').removeClass('show');
+		$('.modal-box').removeClass('animated bounceInDown');
+	});
+			
+    $("body").addClass('mailbody');
+
+});
+</script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+		el: '#wrapper',
+		data: {
+			navs:2
+		},
+		methods: {
+
+		},
+		mounted() {
+
+		}
+	})</script>
+</script>
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body> 
+</html>

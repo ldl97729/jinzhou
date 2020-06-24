@@ -1,0 +1,84 @@
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, button, p, blockquote, pre, hr, th, td, em{margin:0; padding:0;}
+body{font: 12px/1.5  'Microsoft YaHei',Helvetica,Arial,sans-serif; color:#6a6a6a; -webkit-text-size-adjust:none;}
+h1, h2, h3, h4, h5, h6, button, input, select, textarea{font-size:100%; font-weight:normal; font-family: 'Microsoft YaHei',Helvetica,Arial,sans-serif;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+fieldset, img{border:0}
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0; padding:0px; border:0; outline:none;}
+caption,h1, h2, h3, h4, h5, h6, p{margin:0; padding:0px;}
+address, caption, cite, code, em, i, strong, th, var{font-style:normal}
+ol, ul{list-style:none}
+table{border-collapse:collapse; border-spacing:0}
+label{cursor:default}
+input,textarea{ outline:none}
+a{text-decoration:none; cursor:pointer;}
+a{color:inherit;}
+a:link{text-decoration:none;}
+.fleft, .uleft li{float:left; display:inline}
+.fright{float:right; display:inline}
+.clear{clear:both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.no_background{background:none !important;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+/* End hide from IE-mac */
+*{box-sizing: border-box; -webkit-box-sizing: border-box;}
+.hand{cursor:pointer}
+.m0{margin:0px;}
+.p0{padding:0px;}
+.mt10{margin-top:10px !important;}
+.mt29{margin-top:29px !important;}
+.ml10{margin-left:10px !important;}
+.mr10{margin-right:10px !important;}
+.mb10{margin-bottom:10px !important;}
+.pt10{padding-top:10px !important;}
+.pl10{padding-left:10px !important;}
+.pr10{padding-right:10px !important;}
+.pb10{padding-bottom:10px !important;}
+.pb50{padding-bottom:50px !important;}
+.fsongti{ font-family:"宋体";}
+.fxinsongti{ font-family:"新宋体" ;}
+.colorwhite{ color:#FFF !important;}
+.colorblack{ color:#000 !important;}
+.colorgray{ color:#595757 !important;}
+.textcenter{ text-align:center !important;}
+.fontbold{font-weight:bold !important;}
+.posrela{position:relative;}
+.overen{overflow:hidden;zoom:1;}
+.overflowtxt{overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.hide{display:none;}
+.show{display:block !important;}
+/*-------------------去掉A标签的虚线框----------------------*/
+a{ 
+blr:expression(this.onFocus=this.blur()); /* IE Opera */ 
+outline:none; /* FF Opera */ 
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;}
+a:focus{ -moz-outline-style: none; /* FF */ }
+a:hover {
+	color: #ff6000;
+	text-decoration:none;
+}
+.upf {                        /*字母全部大写*/
+	text-transform:uppercase;
+}
+.lowf {                      /*字母全部小写*/
+	text-transform:lowercase;
+}
+.capf {                      /*首字母大写*/
+	text-transform:capitalize;
+}
+
+/*中等屏幕pc*/
+@media screen and (min-width:1200px) and (max-width:1519px){
+	.layout{ width: 1180px; }
+}
+/*小屏幕pc*/
+@media screen and (min-width:768px) and (max-width:1199px){
+  .layout { width: 750px; }
+}
+/*移动端*/
+@media screen and (min-width:320px) and (max-width:767px){
+  .layout { width: 95%;  }
+}

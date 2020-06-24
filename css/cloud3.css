@@ -1,0 +1,45 @@
+.order-table-info .obtns{
+    padding: 0 10px;
+    width: auto;
+    margin:0;
+}
+
+.order-table-info .addDisk .del i:after{
+    content: '';
+    width: 2px;
+    height: 0 !important;
+}
+.pro-table .no-data{
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+}
+.demo-input-suffix{width: 200px !important;}
+.el-slider__button.dragging, .el-slider__button.hover, .el-slider__button:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.el-slider__button{
+    border: 3px solid #ff5100 !important;
+}
+.el-slider__runway{
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    margin: 0;
+}
+.el-slider__bar{
+    height: 8px;
+    background-color: #ff5100;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.mtb-px-15{
+    margin:15px 0;
+}
+.mt-px-10{margin-top:10px;}
+.mr-px-10{margin-right:10px;}
+.fl{
+    float: left;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="汇华科技" />
+	<meta name="description" content="汇华科技" />
+	<meta name="author" content="MR.GUANGZHOU">
+	<title>关于我们-公司简介</title>
+	<link rel="Bookmark" href="images/favicon.ico" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="css/gobal.css" />
+	<link type="text/css" rel="stylesheet" href="css/animate.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!--IE9下 jquery1.7版本-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/jquery1.7.2.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery3.4.1.js"></script>
+	<script type="text/javascript" src="js/jquery.md5.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/httpcommon.js"></script>
+	<!--IE9下 媒体查询-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+	<!--IE9下 HTML5标签支持-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+</head>
+<body>
+
+<!--wrapper-->
+<div id="wrapper">
+	<!--wrapper star-->
+	<header-top :navs="7"></header-top>
+	<!--Mobile menu-->
+	<div class="mask"></div>
+	<div class="mob-nav">
+		<div class="neirong-close">close</div>
+		<!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+		<ul class="subtab">
+			<li><a class="tlink" href="index.html">首页</a></li>
+			<li>
+				<a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+				<div class="submenu">
+					<ul>
+						<li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+						<li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+						<li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a class="tlink subbtn" href="javascript:;">企业应用</a>
+				<div class="submenu">
+					<ul>
+						<li><a class="mlink" href="application.html">智能营销</a></li>
+						<li><a class="mlink" href="application1.html">CRM</a></li>
+						<li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+						<li><a class="mlink" href="application3.html">Teambition</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a class="tlink subbtn" href="javascript:;">云产品</a>
+				<div class="submenu">
+					<ul>
+						<li>
+							<a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+							<div class="menuer">
+								<a href="cloud.html">域名注册</a>
+								<a href="cloud.html">域名购买</a>
+								<a href="cloud.html">网站建设</a>
+							</div>
+						</li>
+						<li>
+							<a class="mlink subbtn1" href="javascript:;">云服务器</a>
+							<div class="menuer">
+								<a href="cloud3.html">弹性计算ECS</a>
+								<a href="#">CDM</a>
+								<a href="#">云安全</a>
+							</div>
+						</li>
+						<li>
+							<a class="mlink subbtn1" href="javascript:;">短信服务</a>
+							<div class="menuer">
+								<a href="cloud1.html">营销短信</a>
+								<a href="#">验证码/通知</a>
+								<a href="cloud2.html">国际短信</a>
+								<a href="#">数字短信</a>
+							</div>
+						</li>
+						<li>
+							<a class="mlink subbtn1" href="javascript:;">云运维</a>
+							<div class="menuer">
+								<a href="cloud.html">数据迁移</a>
+								<a href="#">代运维</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+			<li>
+				<a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+				<div class="submenu">
+					<ul>
+						<li><a class="mlink" href="news.html">行业动态</a></li>
+						<li><a class="mlink" href="news.html">产品资讯</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a class="tlink subbtn" href="javascript:;">解决方案</a>
+				<div class="submenu">
+					<ul>
+						<li>
+							<a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+							<div class="menuer">
+								<a href="solution.html">混合云解决方案</a>
+								<a href="solution.html">异地容灾解决方案</a>
+							</div>
+						</li>
+						<li>
+							<a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+							<div class="menuer">
+								<a href="solution.html">电商解决方案</a>
+								<a href="solution.html">游戏解决方案</a>
+								<a href="solution.html">物流解决方案</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a class="tlink" href="ecology.html">生态合作</a></li>
+			<li>
+				<a class="tlink subbtn" href="javascript:;">帮助中心</a>
+				<div class="submenu">
+					<ul>
+						<li><a class="mlink" href="help.html">阿里邮箱</a></li>
+						<li><a class="mlink" href="help.html">阿里云</a></li>
+						<li><a class="mlink" href="help.html">Teambition</a></li>
+						<li><a class="mlink" href="help.html">钉钉</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<section><div class="contain">
+		<div class="nybanner" style="background-image: url(images/banner3.jpg);">
+			<div class="nytit">
+				<div class="layout">
+					<h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">关于我们</h2>
+					<p class="pn wow fadeInUp" data-wow-delay="0.4s">为TO B企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能解决方案。帮助企业 降低销售成本，提升销售业绩。</p>
+				</div>
+			</div>
+			<div class="nynav">
+				<div class="layout">
+					<div class="list">
+						<a class="btns" href="javascript:;">公司简介</a>
+						<ul class="clearfix">
+							<li class="on"><a class="a" href="about.html">公司简介</a></li>
+							<li><a class="a" href="history.html">发展历程</a></li>
+							<li><a class="a" href="job.html">人才招聘</a></li>
+							<li><a class="a" href="#">付款方式</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sectionBox section01">
+			<div class="layout">
+				<div class="index-title">
+					<h2 class="h2 wow fadeInUp" data-wow-delay="0.2s" id="title">汇华科技是一家怎样的公司？</h2>
+				</div>
+				<div class="aboutus">
+					<p>广州汇华信息科技有限公司位于广东省广州市海珠区新港东路1088号中洲交易中心1402号，成立于2015年，是阿里邮箱授权服务中心、阿里云授权服务中心、钉钉授权服务中心，汇华科技骨干团队由国内知名云计算厂商组建而成，致力于为客户提供云计算和云办公应用的一站式解决方案，为企业创造高效价值。</p>
+					<br>
+					<p>本着为客户服务，为员工着想，为企业贡献，为社会尽责的理念，全力打造IDC行业管理系统的专业产品 ！我们坚信，世界互联网行业，会因为我们的努力，而变得更加精彩 ！</p>
+				</div>
+			</div>
+		</div>
+		<div class="sectionBox section02">
+			<div class="layout">
+				<div class="index-title">
+					<h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">汇华理念——简单·可信赖</h2>
+				</div>
+				<div class="culture-list">
+					<ul class="clearfix">
+						<li><div class="box">
+							<span class="icon"><img alt="客户" src="images/icon22.png"></span>
+							<h2 class="h2">我们的客户</h2>
+							<div class="pcont">
+								<p>让我们的客户，因为我们的服务而得到更好的发展 ！</p>
+							</div>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="客户" src="images/icon23.png"></span>
+							<h2 class="h2">我们的员工</h2>
+							<div class="pcont">
+								<p>让我们的客户，因为我们的服务而得到更好的发展 ！</p>
+							</div>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="客户" src="images/icon24.png"></span>
+							<h2 class="h2">我们的企业</h2>
+							<div class="pcont">
+								<p>让我们的客户，因为我们的服务而得到更好的发展 ！</p>
+							</div>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="客户" src="images/icon25.png"></span>
+							<h2 class="h2">我们的社会</h2>
+							<div class="pcont">
+								<p>让我们的客户，因为我们的服务而得到更好的发展 ！</p>
+							</div>
+						</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div></section>
+
+	<footer-bottom></footer-bottom>
+	<!--myTop-->
+	<div class="myTop">
+		<ul>
+			<li class="myMess"><a href="javascript:;">
+				<i class="icon"></i>
+				<span class="t">在线咨询</span>
+			</a></li>
+			<li class="myNum">
+				<a href="javascript:;">
+					<i class="icon"></i>
+					<span class="t">咨询电话</span>
+				</a>
+				<p class="Phone">400-800-0908</p>
+			</li>
+			<li class="mySer"><a href="javascript:;">
+				<i class="icon"></i>
+				<span class="t">售后服务</span>
+			</a></li>
+			<li class="GoTop"><a href="javascript:;">
+				<i class="icon"></i>
+				<span class="t">返回顶部</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<!--wrapper end-->
+</div>
+<!--wrapper-->
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript" src="js/resource/about.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+		el: '#wrapper',
+		data: {
+			navs:7
+		},
+		methods: {
+
+		},
+		mounted() {
+
+		}
+	})</script>
+<script>
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body>
+</html>

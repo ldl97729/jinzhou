@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>企业邮箱-运维服务</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+
+	 <header-top :navs="1"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="sectionBox mail-bg2">
+                 <div class="layout">
+					 <div class="mail-details clearfix">
+						 <div class="maildetails-left">
+							 <div class="box">
+								 <table>
+									 <tbody>
+										 <tr>
+											 <td class="w">服 务 商:</td>
+											 <td><span style="color: #ff5100;">武汉完美网络服务有限公司</span></td>
+										 </tr>
+										 <tr>
+											 <td class="w">联系客服：</td>
+											 <td><span>XXX</span></td>
+										 </tr>
+										 <tr>
+											 <td class="w">问题处理：</td>
+											 <td><span class="type">提交工单</span></td>
+										 </tr>
+										 <tr>
+											 <td class="w">在线时间：</td>
+											 <td><span>8:30-18:00</span></td>
+										 </tr>
+										 <tr>
+											 <td class="w">电话：</td>
+											 <td>
+												 <span class="tellnum">4009030002转10275</span>
+												 <p>13667279284</p>
+												 <p>非上班时间1321274491</p>
+												 <p>44008005185-10275</p>
+											 </td>
+										 </tr>
+										 <tr>
+											 <td class="w">邮箱：</td>
+											 <td><span>hm@10idc.com</span></td>
+										 </tr>
+									 </tbody>
+								 </table>
+							 </div>
+						 </div>
+						 <div class="maildetails-right">
+							 <div class="maildeta-info">
+								 <div class="mailtable-main">
+									 <table>
+										 <tbody>
+											 <tr>
+												 <td class="l">
+													 <span class="icon"><img alt="邮箱搬家" src="images/img21.jpg"></span>
+												 </td>
+												 <td class="r">
+													 <h2 class="h2">企业邮箱搬家</h2>
+													 <p class="pn">中国百强互联网服务运营商，一对二（销售+客服）服务好，数据传输安全是互联网的刚需，赶快拨打：4008005185 转 10275 或者旺旺咨询客服----(邮箱搬家)</p>
+													 <div class="pricebox">
+														 <div class="pr">¥<span>100</span></div>
+														 <div class="score">
+															 <div class="fraction">
+																 <span>用户评价：</span>
+																 <span class="frimg">
+																	 <img alt="星星" src="images/stars.png">
+																	 <img alt="星星" src="images/stars.png">
+																	 <img alt="星星" src="images/stars.png">
+																	 <img alt="星星" src="images/stars.png">
+																	 <img alt="星星" src="images/stars.png">
+																 </span>
+															 </div>
+															 <div class="deal">近180天成交：0笔</div>
+														 </div>
+													 </div>
+												 </td>
+											 </tr>
+											 <tr>
+												 <td class="l">套餐版本：</td>
+												 <td class="r">
+													 <div class="chebox">
+														 <ul class="clearfix">
+															 <li class="on"><a href="javascript:;">企业邮箱搬家</a></li>
+														 </ul>
+													 </div>
+												 </td>
+											 </tr>
+											 <tr>
+												 <td class="l">购买时长：</td>
+												 <td class="r">
+													 <div class="chebox">
+														 <ul class="clearfix">
+															 <li class="on"><a href="javascript:;">单次</a></li>
+															 <li>自购买之日起长期有效</li>
+														 </ul>
+													 </div> 
+													 <div class="buy-div">
+														 <a class="pur show-btn" href="javascript:;">立即咨询</a>
+														 <!--<a class="car" href="#">加入购物车</a>-->
+														 <!--<a class="cons" href="#">咨询</a>-->
+													 </div>
+												 </td>
+											 </tr>
+										 </tbody>
+									 </table>
+								 </div>
+								 <div class="guarantee-box">
+									 <div class="fl">
+										 <h2 class="h2">服务保障</h2>
+										 <p class="pn">请勿线下交易！90%的欺诈、纠纷、资金盗取均由线下交易导致。</p>
+									 </div>
+									 <div class="fr">
+										 <ul class="clearfix">
+											 <li>保</li>
+											 <li>退</li>
+											 <li>监</li>
+											 <li>优</li>
+										 </ul>
+									 </div>
+								 </div>
+							 </div>
+							 <div class="maildeta-tmain">
+								 <!--详情 start-->
+								 <div class="mail-tab">
+									 <ul class="clearfix">
+										 <li><a href="#tab1">产品详情</a></li>
+										 <li><a href="#tab5">产品价格</a></li>
+										 <li><a href="#tab6">客户案例</a></li>
+										 <li><a href="#">使用指南</a></li>
+									 </ul>
+								 </div>
+								 <div id="tab1" class="mail-contbox">
+									 <h2 class="tit">产品亮点</h2>
+									 <div class="textbox">
+										 <p style="font-size: 12px; color: #666;">速度快、数据安全完整、优质服务！</p>
+									 </div>
+								 </div>
+								 <div id="tab2" class="mail-contbox">
+									 <h2 class="tit">产品说明</h2>
+									 <div class="textbox">
+										 <p style="font-size: 12px; color: #666;">
+											 <img alt="邮箱搬家" src="images/img22.jpg">
+										 </p>
+									 </div>
+								 </div>
+								 <div id="tab3" class="mail-contbox">
+									 <h2 class="tit">产品说明</h2>
+									 <div class="textbox">
+										 <table class="table1">
+											 <tbody>
+												 <tr>
+													 <td>交付方式</td>
+													 <td>人工服务</td>
+												 </tr>
+												 <tr>
+													 <td>依托云产品</td>
+													 <td>其它</td>
+												 </tr>
+												 <tr>
+													 <td>质保时间</td>
+													 <td>7天</td>
+												 </tr>
+												 <tr>
+													 <td>交付时间</td>
+													 <td>2天</td>
+												 </tr>
+											 </tbody>
+										 </table>
+									 </div>
+								 </div>
+								 <div id="tab4" class="mail-contbox">
+									 <h2 class="tit">售后支持范围</h2>
+									 <div class="textbox">
+										 <p style="font-size: 12px; color: #666;">1、7x24小时服务 2、客户购买成功后会提供操作文档客户查看 3、客户购买后有任何问题，可以随时联系客服或者销售人员</p>
+									 </div>
+								 </div>
+								 <div id="tab5" class="mail-contbox">
+									 <h2 class="tit">产品价格<span class="tips">(此处价格仅供参考，实际价格以选配后的价格为准)</span></h2>
+									 <div class="textbox">
+										 <table class="table2">
+											 <tbody>
+												 <tr class="title">
+													 <td>版本名称</td>
+													 <td>计费项</td>
+													 <td>新购</td>
+												 </tr>
+												 <tr>
+													 <td>企业邮箱搬家</td>
+													 <td>版本基础价格</td>
+													 <td>100元</td>
+												 </tr>
+											 </tbody>
+										 </table>
+									 </div>
+								 </div>
+								 <div id="tab6" class="mail-contbox">
+									 <h2 class="tit">客户案例</h2>
+									 <div class="textbox">
+										 <div class="caselist">
+											 <ul class="clearfix">
+												 <li><div class="box"><img alt="案例" src="images/img1.jpg"></div></li>
+												 <li><div class="box"><img alt="案例" src="images/img2.jpg"></div></li>
+												 <li><div class="box"><img alt="案例" src="images/img3.jpg"></div></li>
+												 <li><div class="box"><img alt="案例" src="images/img1.jpg"></div></li>
+												 <li><div class="box"><img alt="案例" src="images/img2.jpg"></div></li>
+												 <li><div class="box"><img alt="案例" src="images/img3.jpg"></div></li>
+											 </ul>
+										 </div>
+									 </div>
+								 </div>
+								 <!--详情 end-->
+							 </div>
+						 </div>
+					 </div>
+                </div>     
+             </div>
+         </div></section>
+
+		 <footer><div class="footer">
+			<div class="layout">
+				<div class="foot-ser">
+					<ul class="clearfix">
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon17.png"></span>
+							<h2 class="h2">实时开通</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon18.png"></span>
+							<h2 class="h2">520标准服务</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon19.png"></span>
+							<h2 class="h2">全天候客户服务</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+						<li><div class="box">
+							<span class="icon"><img alt="服务" src="images/icon20.png"></span>
+							<h2 class="h2">专属顾问服务</h2>
+							<p class="pn">自选配置 实时开通 在线管理</p>
+						</div></li>
+					</ul>
+				</div>
+				<div class="foot-midd clearfix">
+					<div class="foot-nav">
+						<dl class="dl">
+							<dt><a href="mailbox.html">企业邮箱</a></dt>
+							<dd><a href="mailbox.html">产品介绍</a></dd>
+							<dd><a href="mailbox1.html">钉邮</a></dd>
+							<dd><a href="mailbox.html">免费试用</a></dd>
+							<dd><a href="mailbox2.html">运维服务</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="application.html">企业应用</a></dt>
+							<dd><a href="application.html">智能营销</a></dd>
+							<dd><a href="application1.html">CRM</a></dd>
+							<!--<dd><a href="#">易快报</a></dd>-->
+							<dd><a href="application2.html">蚂蚁分工</a></dd>
+							<dd><a href="application3.html">Teambition</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="cloud.html">云产品</a></dt>
+							<dd><a href="cloud.html">域名与网站</a></dd>
+							<dd><a href="cloud3.html">云服务器</a></dd>
+							<dd><a href="cloud1.html">短信服务</a></dd>
+							<dd><a href="#">云运维</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="dingding.html">钉钉服务</a></dt>
+							<dd><a href="#">VIP顾问服务</a></dd>
+							<dd><a href="#">定制开发</a></dd>
+							<dd><a href="#">客户案例</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="solution.html">解决方案</a></dt>
+							<dd><a href="solution.html">通用解决方案</a></dd>
+							<dd><a href="solution.html">行业解决方案</a></dd>
+						</dl>
+						<dl class="dl">
+							<dt><a href="ecology.html">生态合作</a></dt>
+							<dd><a href="ecology.html">渠道合作</a></dd>
+							<dd><a href="about.html">汇华云简介</a></dd>
+							<dd><a href="news.html">新闻动态</a></dd>
+						</dl>
+					</div>
+					<div class="foot-info">
+						<a class="btns" href="#"><span>在线客服</span></a>
+						<h2 class="h2">400-066-2020</h2>
+						<p class="pn">24 小时全国热线</p>
+					</div>
+					<div class="foot-ewm">
+						<img alt="二维码" src="images/ewm.jpg">
+						<p>扫一扫关注我们</p>
+					</div>
+				</div>
+				<div class="foot-copy clearfix">
+					<div class="ftlink">   
+						<a href="about.html">关于我们</a>     
+						<a href="#">联系方式</a>     
+						<a href="help.html">帮助中心</a>     
+						<a href="ecology.html">渠道合作</a>     
+						<a href="job.html">人才招聘</a>
+					</div>
+					<div class="fttext">
+						<div class="txt">Copyright © 2015-2017 汇华科技 huiva.com All Rights Reserved.   粤ICP备16062790号-2</div>
+						<div class="bdsharebuttonbox foot-sns">
+							<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+							<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+							<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></footer>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+		 <!--申请试用-->
+		 <div class="layout-container">
+			 <div class="fixed-box">
+				 <div class="modal-box">
+					 <div class="modal-form">
+						 <div class="title">
+							 <img alt="阿里" src="images/alicloud.png">
+							 <span class="tips">20年阿里企业邮箱运营经验！咨询热线：400-066-2020</span>
+						 </div>
+						 <div class="app-form">
+							 <ul>
+								 <li class="item">
+									 <div class="input-box">
+										 <span class="tit">试用申请</span>
+										 <input class="text" name="free" type="text" value="免费试用" >
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="input-box">
+										 <span class="tit">您的姓名<i>*</i></span>
+										 <input class="text" name="name" type="text" value="" placeholder="怎么称呼您" >
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="input-box">
+										 <span class="tit">联系电话<i>*</i></span>
+										 <input class="text" name="phone" type="text" value="" placeholder="11位手机号码" >
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="input-box">
+										 <span class="tit">企业名称</span>
+										 <input class="text" name="firmName" type="text" value="" placeholder="您所在的组织或者企业名称" >
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="input-box">
+										 <span class="tit">常用邮箱</span>
+										 <input class="text" name="email" type="text" value="" placeholder="您的邮箱" >
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="input-box">
+										 <span class="tit">概要备注</span>
+										 <input class="text" name="remarks" type="text" value="" placeholder="附加信息，留言备注内容" >
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="input-box yzm-box">
+										 <span class="tit">验证码</span>
+										 <input class="text" name="code" type="text" value="" placeholder="请输入验证码" >
+										 <img class="yzm" alt="验证码" src="images/yzm.jpg" id="imgcode">
+									 </div>
+								 </li>
+								 <li class="item">
+									 <div class="subimt-box">
+										 <input id="comfirm" class="btns subimt" type="button" value="确认提交">
+										 <input class="btns button" type="button" value="咨询客服" >
+									 </div>
+								 </li>
+							 </ul>
+						 </div>
+						 <div class="close"><img alt="关闭" src="images/close.png"></div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+
+<script>
+$(document).ready(function() {	
+    $("body").addClass('mailbody');
+});
+</script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+		el: '#wrapper',
+		data: {
+			navs:1
+		},
+		methods: {
+
+		},
+		mounted() {
+
+		}
+	})</script>
+</script>
+ <script type="text/javascript" src="./js/resource/mailbox.js" />
+
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body> 
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>企业应用-蚂蚁分工</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+
+	 <header-top :navs="2"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="nybanner mailbanner" style="background-image: url(images/banner8.jpg);">
+				 <div class="nytit">
+					 <div class="layout">
+						 <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">蚂蚁分工</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">为TO B企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能解决方案。帮助企业 降低销售成本，提升销售业绩。</p>
+					     <div class="btnsbox wow fadeInUp" data-wow-delay="0.6s" >
+							 <a class="btns" style="background-color: #ff5100; color: #fff;" href="#">立即咨询</a>
+					     </div>
+					 </div>
+				 </div>
+             </div>
+			<div class="sectionBox mail-bg3">
+				<div class="layout">
+					<div class="app-video">
+						<ul>
+							<li>
+								<div class="pic"><a href="#"><img alt="图片" src="images/img39.jpg"></a></div>
+								<div class="tmain">
+									<h2 class="h2">01.目标分解与计划</h2>
+									<dl class="clearfix">
+										<dd>
+											<h3 class="h3">工作安排全景视图展现</h3>
+											<p>WBS分解，工作安排在线化</p>
+										</dd>
+										<dd>
+											<h3 class="h3">责任划分明晰</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+										<dd>
+											<h3 class="h3">工作不再有遗漏</h3>
+											<p>任务系统提醒</p>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="pic"><a href="#"><img alt="图片" src="images/img40.jpg"></a></div>
+								<div class="tmain">
+									<h2 class="h2">02.工作执行与协作</h2>
+									<dl class="clearfix">
+										<dd>
+											<h3 class="h3">实现工作PDCA闭环管理</h3>
+											<p>WBS分解，工作安排在线化</p>
+										</dd>
+										<dd>
+											<h3 class="h3">内部成员有效沟通</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+										<dd>
+											<h3 class="h3">前后序任务关联</h3>
+											<p>任务系统提醒</p>
+										</dd>
+										<dd>
+											<h3 class="h3">内部成员有效沟通</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="pic"><a href="#"><img alt="图片" src="images/img41.jpg"></a></div>
+								<div class="tmain">
+									<h2 class="h2">03.进度跟踪与管控</h2>
+									<dl class="clearfix">
+										<dd>
+											<h3 class="h3">工作安排全景视图展现</h3>
+											<p>WBS分解，工作安排在线化</p>
+										</dd>
+										<dd>
+											<h3 class="h3">责任划分明晰</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+										<dd>
+											<h3 class="h3">工作不再有遗漏</h3>
+											<p>任务系统提醒</p>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="pic"><a href="#"><img alt="图片" src="images/img42.jpg"></a></div>
+								<div class="tmain">
+									<h2 class="h2">04.数据沉淀与统计</h2>
+									<dl class="clearfix">
+										<dd>
+											<h3 class="h3">实现工作PDCA闭环管理</h3>
+											<p>WBS分解，工作安排在线化</p>
+										</dd>
+										<dd>
+											<h3 class="h3">内部成员有效沟通</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+										<dd>
+											<h3 class="h3">前后序任务关联</h3>
+											<p>任务系统提醒</p>
+										</dd>
+										<dd>
+											<h3 class="h3">内部成员有效沟通</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="pic"><a href="#"><img alt="图片" src="images/img43.jpg"></a></div>
+								<div class="tmain">
+									<h2 class="h2">05.经验迭代与复用</h2>
+									<dl class="clearfix">
+										<dd>
+											<h3 class="h3">工作安排全景视图展现</h3>
+											<p>WBS分解，工作安排在线化</p>
+										</dd>
+										<dd>
+											<h3 class="h3">责任划分明晰</h3>
+											<p>任务责任到人，一人一事</p>
+										</dd>
+										<dd>
+											<h3 class="h3">工作不再有遗漏</h3>
+											<p>任务系统提醒</p>
+										</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">特色功能</h2>
+					    <p class="pn wow fadeInUp" data-wow-delay="0.4s">热门惠聚，一站式云服务助力数字化转型</p>
+					</div>
+					<div class="app-chara">
+						<ul class="clearfix">
+							<li><div class="box">
+								<span class="icon"><img alt="特色功能" src="images/icon53.png"></span>
+								<h2 class="h2">批量导入</h2>
+								<p class="pn">原有工作模块一键导入</p>
+							</div></li>
+							<li><div class="box">
+								<span class="icon"><img alt="特色功能" src="images/icon54.png"></span>
+								<h2 class="h2">循环任务</h2>
+								<p class="pn">原有工作模块一键导入</p>
+							</div></li>
+							<li><div class="box">
+								<span class="icon"><img alt="特色功能" src="images/icon55.png"></span>
+								<h2 class="h2">任务文件</h2>
+								<p class="pn">原有工作模块一键导入</p>
+							</div></li>
+							<li><div class="box">
+								<span class="icon"><img alt="特色功能" src="images/icon56.png"></span>
+								<h2 class="h2">项目复制</h2>
+								<p class="pn">原有工作模块一键导入</p>
+							</div></li>
+							<li><div class="box">
+								<span class="icon"><img alt="特色功能" src="images/icon57.png"></span>
+								<h2 class="h2">团队管理</h2>
+								<p class="pn">原有工作模块一键导入</p>
+							</div></li>
+							<li><div class="box">
+								<span class="icon"><img alt="特色功能" src="images/icon58.png"></span>
+								<h2 class="h2">智能提醒</h2>
+								<p class="pn">原有工作模块一键导入</p>
+							</div></li>
+						</ul>
+					</div>
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">他们选择了我们</h2>
+					    <p class="pn wow fadeInUp" data-wow-delay="0.4s">热门惠聚，一站式云服务助力数字化转型</p>
+					</div>
+					<div class="partner-list">
+						<ul class="clearfix">
+							<li><div class="pic"><img alt="图片" src="images/img1.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img2.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img3.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img4.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img5.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img6.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img7.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img8.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img9.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img10.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img11.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img12.jpg"></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+         </div></section>
+
+		 <footer-bottom></footer-bottom>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+
+<script>
+$(document).ready(function() {
+			
+    $("body").addClass('mailbody');
+
+});</script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+		el: '#wrapper',
+		data: {
+			navs:2
+		},
+		methods: {
+
+		},
+		mounted() {
+
+		}
+	})</script>
+</script>
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body> 
+</html>

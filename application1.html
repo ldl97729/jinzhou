@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="汇华科技" />
+    <meta name="description" content="汇华科技" />
+    <meta name="author" content="MR.GUANGZHOU">
+    <title>企业应用-CRM</title>
+    <link rel="Bookmark" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--IE9下 jquery1.7版本-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery1.7.2.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery3.4.1.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--IE9下 媒体查询-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--IE9下 HTML5标签支持-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/lib/dist/vue.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</head>
+<body>
+
+     <!--wrapper-->
+     <div id="wrapper">
+     <!--wrapper star-->
+
+	 <header-top :navs="2"></header-top>
+
+         <!--Mobile menu-->
+         <div class="mask"></div>
+         <div class="mob-nav">
+             <div class="neirong-close">close</div>
+             <!--<div class="logos"><a href="index.html"><img src="images/logo.png"></a></div>-->
+             <ul class="subtab">
+                 <li><a class="tlink" href="index.html">首页</a></li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业邮箱</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="mailbox.html">产品介绍</a></li>
+					         <li><a class="mlink" href="mailbox1.html">钉邮</a></li>
+							 <li><a class="mlink" href="mailbox2.html">运维服务</a></li>
+					     </ul>
+					 </div>
+			     </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">企业应用</a>
+					 <div class="submenu">
+					     <ul>
+					         <li><a class="mlink" href="application.html">智能营销</a></li>
+					         <li><a class="mlink" href="application1.html">CRM</a></li>
+							 <li><a class="mlink" href="application2.html">蚂蚁分工</a></li>
+							 <li><a class="mlink" href="application3.html">Teambition</a></li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li>
+					 <a class="tlink subbtn" href="javascript:;">云产品</a>
+					 <div class="submenu">
+					     <ul>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">域名与网站</a>
+								 <div class="menuer">
+									 <a href="cloud.html">域名注册</a>
+									 <a href="cloud.html">域名购买</a>
+									 <a href="cloud.html">网站建设</a>
+								 </div>
+							 </li>
+					         <li>
+								 <a class="mlink subbtn1" href="javascript:;">云服务器</a>
+								 <div class="menuer">
+									 <a href="cloud3.html">弹性计算ECS</a>
+									 <a href="#">CDM</a>
+									 <a href="#">云安全</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">短信服务</a>
+								 <div class="menuer">
+									 <a href="cloud1.html">营销短信</a>
+									 <a href="#">验证码/通知</a>
+									 <a href="cloud2.html">国际短信</a>
+									 <a href="#">数字短信</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">云运维</a>
+								 <div class="menuer">
+									 <a href="cloud.html">数据迁移</a>
+									 <a href="#">代运维</a>
+								 </div>
+							 </li>
+					     </ul>
+					 </div>
+				 </li>
+                 <li><a class="tlink" href="dingding.html">钉钉服务</a></li>
+				 <li>
+                     <a class="tlink subbtn" href="javascript:;">行业动态/产品资讯</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="news.html">行业动态</a></li>
+                             <li><a class="mlink" href="news.html">产品资讯</a></li>
+                         </ul>
+                     </div>
+				 </li>
+				 <li>
+					 <a class="tlink subbtn" href="javascript:;">解决方案</a>
+					 <div class="submenu">
+						 <ul>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">通用解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">混合云解决方案</a>
+									 <a href="solution.html">异地容灾解决方案</a>
+								 </div>
+							 </li>
+							 <li>
+								 <a class="mlink subbtn1" href="javascript:;">行业解决方案</a>
+								 <div class="menuer">
+									 <a href="solution.html">电商解决方案</a>
+									 <a href="solution.html">游戏解决方案</a>
+									 <a href="solution.html">物流解决方案</a>
+								 </div>
+							 </li>
+						 </ul>
+					 </div>
+				 </li>
+				 <li><a class="tlink" href="ecology.html">生态合作</a></li>
+                 <li>
+                     <a class="tlink subbtn" href="javascript:;">帮助中心</a>
+                     <div class="submenu">
+                         <ul>
+                             <li><a class="mlink" href="help.html">阿里邮箱</a></li>
+                             <li><a class="mlink" href="help.html">阿里云</a></li>
+							 <li><a class="mlink" href="help.html">Teambition</a></li>
+							 <li><a class="mlink" href="help.html">钉钉</a></li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+		 
+         <section><div class="contain">
+             <div class="nybanner mailbanner" style="background-image: url(images/banner7.jpg);">
+				 <div class="nytit">
+					 <div class="layout">
+						 <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">CRM</h2>
+						 <p class="pn wow fadeInUp" data-wow-delay="0.4s">为TO B企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能解决方案。帮助企业 降低销售成本，提升销售业绩。</p>
+					     <div class="btnsbox wow fadeInUp" data-wow-delay="0.6s" >
+							 <a class="btns" style="background-color: #ff5100; color: #fff;" href="#">立即咨询</a>
+					     </div>
+					 </div>
+				 </div>
+             </div>
+             <div class="app-crm">
+				 <ul>
+					 <li>
+						 <div class="layout clearfix">
+							 <div class="pic wow fadeInRight">
+								 <img alt="CRM" src="images/img37.jpg">
+							 </div>
+							 <div class="tmain wow fadeInLeft">
+								 <h2 class="h2">开拓客户，<span class="s">精</span>兵简政</h2>
+								 <h3 class="h3">精细化客户管理，准确把握客户需求</h3>
+								 <div class="pcont">
+									 <p>及时核对客户线索，避免员工撞单囤单</p>
+									 <p>设置提醒及时跟进，绝不错过重大商机</p>
+								 </div>
+							 </div>
+						 </div>
+					 </li>
+					 <li>
+						 <div class="layout clearfix">
+							 <div class="pic wow fadeInRight">
+								 <img alt="CRM" src="images/img38.jpg">
+							 </div>
+							 <div class="tmain wow fadeInLeft">
+								 <h2 class="h2">销售管理，<span class="s">简</span>截了当</h2>
+								 <h3 class="h3">简化销售流程，提高工作效率</h3>
+								 <div class="pcont">
+									 <p>动态流程全景记录，去繁从简提高效率</p>
+									 <p>语音录入关键内容，地秒转化成为文字</p>
+									 <p>工作报告一键审批，轻量高效省时省力</p>
+								 </div>
+							 </div>
+						 </div>
+					 </li>
+					 <li>
+						 <div class="layout clearfix">
+							 <div class="pic wow fadeInRight">
+								 <img alt="CRM" src="images/img37.jpg">
+							 </div>
+							 <div class="tmain wow fadeInLeft">
+								 <h2 class="h2">培养团队，唯<span class="s">快</span>不破</h2>
+								 <h3 class="h3">工作信息分享互评，及时传递销售信息</h3>
+								 <div class="pcont">
+									 <p>拜访签到一键上传，随时知晓员工动态</p>
+									 <p>销售圈内晒单发贴，疑难杂症快速解决</p>
+								 </div>
+							 </div>
+						 </div>
+					 </li>
+					 <li>
+						 <div class="layout clearfix">
+							 <div class="pic wow fadeInRight">
+								 <img alt="CRM" src="images/img38.jpg">
+							 </div>
+							 <div class="tmain wow fadeInLeft">
+								 <h2 class="h2">数据分析，业绩<span class="s">准</span>绳</h2>
+								 <h3 class="h3">多维度数据分析，准确制定销售计划</h3>
+								 <div class="pcont">
+									 <p>门店数据随时上报，纵观全局准确决策</p>
+									 <p>销售报表实时更新，业务数据一目了然</p>
+								 </div>
+							 </div>
+						 </div>
+					 </li>
+				 </ul>
+             </div>
+			<div class="sectionBox mail-bg3">
+				<div class="layout">
+					<div class="index-title">
+					    <h2 class="h2 wow fadeInUp" data-wow-delay="0.2s">他们选择了我们</h2>
+					    <p class="pn wow fadeInUp" data-wow-delay="0.4s">热门惠聚，一站式云服务助力数字化转型</p>
+					</div>
+					<div class="partner-list">
+						<ul class="clearfix">
+							<li><div class="pic"><img alt="图片" src="images/img1.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img2.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img3.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img4.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img5.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img6.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img7.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img8.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img9.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img10.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img11.jpg"></div></li>
+							<li><div class="pic"><img alt="图片" src="images/img12.jpg"></div></li>
+						</ul>
+					</div>
+					<div class="make-btnsbox">
+						<a class="btns mk" href="#">下载体验</a>
+					</div>
+				</div>
+			</div>
+         </div></section>
+
+		 <footer-bottom></footer-bottom>
+
+        <!--myTop-->
+        <div class="myTop">
+            <ul>
+                <li class="myMess"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">在线咨询</span>
+                </a></li>
+                <li class="myNum">
+                    <a href="javascript:;">
+                        <i class="icon"></i>
+                        <span class="t">咨询电话</span>
+                    </a>
+                    <p class="Phone">400-800-0908</p>
+                </li>
+                <li class="mySer"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">售后服务</span>
+                </a></li>
+                <li class="GoTop"><a href="javascript:;">
+                    <i class="icon"></i>
+                    <span class="t">返回顶部</span>
+                </a></li>
+            </ul>
+        </div>
+
+         <!--wrapper end-->
+     </div>
+     <!--wrapper-->
+
+<script>
+$(document).ready(function() {
+			
+    $("body").addClass('mailbody');
+
+});
+</script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script type="text/javascript">
+	var vue = new Vue({
+		el: '#wrapper',
+		data: {
+			navs:2
+		},
+		methods: {
+
+		},
+		mounted() {
+
+		}
+	})</script>
+</script>
+<script>
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</body> 
+</html>
